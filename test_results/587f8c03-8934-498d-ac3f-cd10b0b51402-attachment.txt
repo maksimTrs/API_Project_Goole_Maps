@@ -1,0 +1,33 @@
+>>> Method POST <<<
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{'status': 'OK', 'place_id': 'f9502d620b84398df715a9b4b2a609f5', 'scope': 'APP', 'reference': '09e92810902c0f30e8f92bbca8130db809e92810902c0f30e8f92bbca8130db8', 'id': '09e92810902c0f30e8f92bbca8130db8'}
+Test passed!!! Status code = 200
+All method's data were presented: ['status', 'place_id', 'scope', 'reference', 'id']
+>>> Method GET POST <<<
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=f9502d620b84398df715a9b4b2a609f5
+{'location': {'latitude': '-38.383494', 'longitude': '33.427362'}, 'accuracy': '50', 'name': 'Frontline house', 'phone_number': '(+91) 983 893 3937', 'address': '29, side layout, cohen 09', 'types': 'shoe park,shop', 'website': 'http://google.com', 'language': 'French-IN'}
+Test passed!!! Status code = 200
+All method's data were presented: ['location', 'accuracy', 'name', 'phone_number', 'address', 'types', 'website', 'language']
+Method's field data was presented: 29, side layout, cohen 09
+>>> Method PUT <<<
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{'msg': 'Address successfully updated'}
+Test passed!!! Status code = 200
+All method's data were presented: ['msg']
+Method's field data was presented: Address successfully updated
+>>> Method GET PUT <<<
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=f9502d620b84398df715a9b4b2a609f5
+{'location': {'latitude': '-38.383494', 'longitude': '33.427362'}, 'accuracy': '50', 'name': 'Frontline house', 'phone_number': '(+91) 983 893 3937', 'address': '100 Lenina street, RU', 'types': 'shoe park,shop', 'website': 'http://google.com', 'language': 'French-IN'}
+Method's field data was presented: 100 Lenina street, RU
+>>> Method DELETE <<<
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{'status': 'OK'}
+Test passed!!! Status code = 200
+Method's field data was presented: OK
+>>> Method GET DELETE <<<
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=f9502d620b84398df715a9b4b2a609f5
+{'msg': "Get operation failed, looks like place_id  doesn't exists"}
+Test passed!!! Status code = 404
+
+Test TestCreateLocation.test_create_location passed!!!
+
